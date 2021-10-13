@@ -1,6 +1,6 @@
 # utm-coordinate-parser
 
-Parse northing and easting from various UTM coordinate string formats in your JavaScript projects. UTM, abbreviation of [Universal Transverse Mercator](https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system), is a popular zoned coordinate system and used as the default coordinate system in many countries including Sweden and Finland. In contrast to the latitude and longitude pair of [WGS84](https://en.wikipedia.org/wiki/World_Geodetic_System), UTM coordinate consists of a *northing* and *easting* pair, relative to the origin of the zone.
+Parse northing and easting from various UTM coordinate string formats in your JavaScript projects. UTM, abbreviation of [Universal Transverse Mercator](https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system), is a popular zoned coordinate system and used as the default coordinate system in many countries including Sweden and Finland. In contrast to the latitude and longitude pair of [WGS84](https://en.wikipedia.org/wiki/World_Geodetic_System), UTM coordinate consists of a *easting* and *northing* pair, relative to the origin of the zone.
 
 To parse latitude and longitude from text input, see [coordinate-parser](https://www.npmjs.com/package/coordinate-parser).
 
@@ -18,14 +18,17 @@ To parse coordinates from text:
 The result `ne` is an object:
 
     {
-      northing: 123456,
-      easting: -123456
+      x: -123456, // easting
+      y: 123456 // northing
     }
+
+If input cannot be parsed or is in unknown format, an Error is thrown.
 
 Supported input text formats:
 
-    N 123456 E 123456
-    W 123456 N 123456
+    N 12345 E 23456
+    W -23456 N 12345
+    x=23456 y=12345
 
 ## Contribute
 
