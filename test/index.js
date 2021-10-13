@@ -59,6 +59,10 @@ test('basic parse', (t) => {
 
 test('unknown format', (t) => {
   t.throws(() => {
+    lib.parse()
+  })
+
+  t.throws(() => {
     lib.parse('123')
   })
 
