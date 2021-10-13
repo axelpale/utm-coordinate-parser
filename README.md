@@ -13,13 +13,13 @@ To parse latitude and longitude from text input, see [coordinate-parser](https:/
 To parse coordinates from text:
 
     const utm = require('utm-coordinate-parser')
-    const ne = utm.parse('N 123456 W 123456')
+    const ne = utm.parse('N 12345 W 23456')
 
 The result `ne` is an object:
 
     {
-      x: -123456, // easting
-      y: 123456 // northing
+      x: -23456, // easting
+      y: 12345 // northing
     }
 
 If input cannot be parsed or is in unknown format, an Error is thrown.
