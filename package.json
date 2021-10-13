@@ -4,7 +4,7 @@
   "description": "Parse UTM northing and easting from text input",
   "main": "index.js",
   "scripts": {
-    "lint": "standard 'src/**/*.js' 'test/**/*.js'",
+    "lint": "standard 'lib/**/*.js' 'test/**/*.js'",
     "test": "node test/index.js",
     "release": "npm run lint && npm run test && npm publish"
   },
