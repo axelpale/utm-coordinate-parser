@@ -26,9 +26,13 @@ If input cannot be parsed or is in unknown format, an Error is thrown.
 
 Supported input text formats:
 
+    23456 12345
     N 12345 E 23456
-    W -23456 N 12345
+    12345 N 23456 E
+    W -23456 S -12345
     x=23456 y=12345
+    x23456 y12345
+    w-23456n12345
 
 ## Contribute
 
