@@ -1,0 +1,35 @@
+{
+  "name": "utm-coordinate-parser",
+  "version": "0.0.1",
+  "description": "Parse UTM northing and easting from text input",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard 'src/**/*.js' 'test/**/*.js'",
+    "test": "node test/index.js",
+    "release": "npm run lint && npm run test && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axelpale/utm-coordinate-parser.git"
+  },
+  "keywords": [
+    "utm",
+    "gis",
+    "geo",
+    "coordinates",
+    "parser"
+  ],
+  "author": {
+    "name": "Akseli Palén",
+    "email": "akseli.palen@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/axelpale/utm-coordinate-parser/issues"
+  },
+  "homepage": "https://github.com/axelpale/utm-coordinate-parser",
+  "devDependencies": {
+    "standard": "^16.0.4",
+    "tape": "^5.3.1"
+  }
+}
