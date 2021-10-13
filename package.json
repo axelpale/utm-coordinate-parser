@@ -18,6 +18,8 @@
     "gis",
     "geo",
     "coordinates",
+    "northing",
+    "easting",
     "parser"
   ],
   "author": {
