@@ -11,6 +11,11 @@ const samples = [
     output: { x: 6717563, y: 2545107 }
   },
   {
+    input: 'x=6717563 y=2545107 YKJ',
+    output: { x: 6717563, y: 2545107 }
+    // Example https://fi.scoutwiki.org/Koordinaatit
+  },
+  {
     input: 'y=2545107 x=6717563',
     output: { x: 6717563, y: 2545107 }
   },
