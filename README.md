@@ -38,6 +38,8 @@ Supported input text formats:
     x23456 y12345
     w-23456n12345
 
+If the input has no recognisable direction labels such as `N` or `x` then the easting is assumed to come first.
+
 ## Contribute
 
 Pull requests and [bug reports](https://github.com/axelpale/node-lib-template/issues) are highly appreciated. The code is written in [ES6](https://en.wikipedia.org/wiki/ECMAScript) in [StandardJS](https://standardjs.com/) style. Please test your contribution with the following scripts.
