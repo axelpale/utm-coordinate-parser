@@ -6,6 +6,8 @@ To parse latitude and longitude from text input, see [coordinate-parser](https:/
 
 ## Installation
 
+Install via [NPM](https://www.npmjs.com/package/utm-coordinate-parser):
+
     $ npm install utm-coordinate-parser
 
 ## Usage & API
