@@ -14,8 +14,8 @@ Install via [NPM](https://www.npmjs.com/package/utm-coordinate-parser):
 
 To parse coordinates from text:
 
-    const utm = require('utm-coordinate-parser')
-    const pos = utm.parse('N 12345 W 23456')
+    const utmp = require('utm-coordinate-parser')
+    const pos = utmp.parse('N 12345 W 23456')
 
 The result `pos` is an object:
 
@@ -42,7 +42,7 @@ If the input has no recognisable direction labels such as `N` or `x` then the ea
 
 ## API
 
-### utm.parse(text, options)
+### utmp.parse(text, options)
 
 Extract numeric coordinates from a free-form UTM coordinate string.
 
@@ -69,7 +69,7 @@ Extract numeric coordinates from a free-form UTM coordinate string.
 
 **Example:**
 
-    utm.parse('N 12345, E 23456')
+    utmp.parse('N 12345, E 23456')
     // => { x: 23456, y: 12345 }
 
 **Example** with custom label patterns:
@@ -78,10 +78,10 @@ Extract numeric coordinates from a free-form UTM coordinate string.
       northingLabel: /^[yYnNpP]/,
       eastingLabel: /^[xXeEiI]/
     }
-    utm.parse('P: 12345, I: 23456', opts)
+    utmp.parse('P: 12345, I: 23456', opts)
     // => { x: 23456, y: 12345 }
 
-### utm.validate(text, options)
+### utmp.validate(text, options)
 
 Not yet implemented. Let us know by [submitting an issue](https://github.com/axelpale/node-lib-template/issues) if you happen to need such feature.
 
