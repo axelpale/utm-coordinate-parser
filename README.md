@@ -38,7 +38,7 @@ Supported input text formats:
     x23456 y12345
     w-23456n12345
 
-If the input has no recognisable direction labels such as `N` or `x` then the easting is assumed to come first. If input has language-specific labels, for example `P` and `I` in Finland, you might want to customise label patterns with options `eastingLabel` and `northingLabel`. See [API](#API) for details.
+If the input has no recognisable direction labels such as `N` or `x` then the easting coordinate is assumed to come first. If input has language-specific labels, for example `P` and `I` in Finland, you might want to customise label patterns with options `eastingLabel` and `northingLabel`. See [API](#API) for details.
 
 ## API
 
