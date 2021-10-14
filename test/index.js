@@ -13,7 +13,7 @@ const samples = [
   {
     input: 'x=6717563 y=2545107 YKJ',
     output: { x: 6717563, y: 2545107 }
-    // Example https://fi.scoutwiki.org/Koordinaatit
+    // Example from https://fi.scoutwiki.org/Koordinaatit
   },
   {
     input: 'y=2545107 x=6717563',
@@ -66,14 +66,21 @@ const samples = [
   {
     input: 'A 6717563 B 2545107',
     output: { x: 6717563, y: 2545107 }
+  },
+  {
+    input: 'P: 2545107 m\n I: 6717563 m',
+    options: { northingLabel: /^[yYnNpP]/, eastingLabel: /^[xXeEiI]/ },
+    output: { x: 6717563, y: 2545107 }
+    // Finnish labels: P = northing, I = easting.
+    // Example from riista.fi, Ohjeita koordinaattien kirjaamiseen
   }
 ]
 
-test('basic parse', (t) => {
+test('parse', (t) => {
   t.plan(samples.length)
 
   samples.forEach((sample) => {
-    const output = lib.parse(sample.input)
+    const output = lib.parse(sample.input, sample.options)
     t.deepEqual(output, sample.output)
   })
 })
